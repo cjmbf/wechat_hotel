@@ -1,0 +1,2 @@
+/* pages/bedlist/bedlist.wxss */
+@import '../index/index.wxss';

@@ -1,0 +1,49 @@
+<!--pages/imfor/imfor.wxml-->
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="http://localhost:8089/{{item.picture}}" class="slide-image" width="100" height="150" style='width:100%'/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view style='width:90vw;margin-left:8vw;color:#000;margin-top:20px;'>
+    <label>{{roomName}}</label>
+    <view style='display:flex;flex-direction:row;margin-top:10px;'>
+      <view style='flex:1;' class='info'>
+        <view >门市价</view>
+        <view>{{racPrice}}元/夜</view>
+
+      </view>
+      <view class='line'>|</view>
+      <view style='flex:1;' class='info'>
+        <view>会员价</view>
+        <view>{{memberPrice}}元/夜</view>
+      </view>
+      <view class='line'>|</view>
+      <view style='flex:1;' class='info'>
+        <view>面积</view>
+        <view>{{area}}㎡</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='hr'></view>
+
+<view >
+  <view class='fjjj' style='margin-bottom:100px;'>
+    <view class='title' >房间简介</view>
+    <view class="neirong">{{jianjie}}整间套房分为主卧和客厅两大空间，均配置独立高级卫生间。豪华套房设有超宽敞开放式私人阳台，让整个空间始终能够得到充足的自然光线。整个套房空间均保持着明清建筑的豪宅风格，搭配深色木质家具，既奢华却不庸俗，雅致却不失高贵。  </view>
+  </view>
+  </view>
+<view class='footer' style='color:#fff;font-size:14px;'>
+  <view bindtap="guanzhu">
+    <image src="{{followNumber?'img/selectcollect.png':'img/notselectcollect.png'}}"></image>
+    <label>{{followNumber?'已收藏':'未收藏'}}</label>
+  </view>
+  <view bindtap="yuding">
+    <image src="img/selectorder.png"></image>
+    <label style="font-size:14px;">预定</label> 
+  </view>
+</view>

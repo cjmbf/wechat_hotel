@@ -1,0 +1,23 @@
+/* pages/list1/list1.wxss */
+@import '../index/index.wxss';
+.condition{
+  position: relative;
+  top:10px;
+  left: 40px;
+  background:#fcb51cbb;
+  border-radius: 10%;
+  color: #fff;
+  width: 25vw;
+  font: bold 20px/1 “helvetica neue”, helvetica, arial, sans-serif;
+  text-align: center;
+  box-shadow: 0 1px 3px #fcb51cbb;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+}
+image{
+  position: relative;
+  top:10vw;
+}
+.imfor{
+  border-bottom: 3px solid #eee;
+  padding-bottom: 15px;
+}

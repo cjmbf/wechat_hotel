@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/reg/reg",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me",
+    "pages/imfor/imfor",
+    "pages/jiudian/jiudian",
+    "pages/yuding/yuding",
+    "pages/bedlist/bedlist",
+    "pages/bedlist2/bedlist2",
+    "pages/list1/list1"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "XX酒店订房",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#555",
+    "selectedColor":"#3e4393",
+    "list": [
+      {
+        "backgroundColor":"#222",
+        "pagePath": "pages/index/index",
+        "text": "预定中心",
+        "iconPath": "img/iconpic/order.png",
+        "selectedIconPath": "img/iconpic/orderselect.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "img/iconpic/member.png",
+        "selectedIconPath": "img/iconpic/memberselect.png"
+      },
+      {
+        "pagePath": "pages/jiudian/jiudian",
+        "text": "了解更多",
+        "iconPath": "img/iconpic/coupon.png",
+        "selectedIconPath": "img/iconpic/couponselect.png"
+      }
+    ]
+  },
+
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

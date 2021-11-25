@@ -1,0 +1,38 @@
+<!--pages/jiudian/jiudian.wxml-->
+<view class="mukuai">
+      <view class="title"><image src="img/地址.png"></image><span>酒店地址</span></view>
+      <view class="imfor">浙江省杭州市西湖区XXXXXXXX</view>
+</view>
+<view class="mukuai">
+      <view class="title"><image src="img/酒店.png"></image><span>酒店设施</span></view>
+      <view class="item">
+         <view>
+           <image src="img/早餐16x16.png"></image>
+           <p>早餐</p>
+         </view>
+         <view>
+           <image src="img/日常家电—吹风机.png"></image>
+           <p>吹风机</p>
+         </view>
+         <view>
+           <image src="img/餐厅.png"></image>
+           <p>餐厅</p>
+         </view>
+         <view>
+           <image src="img/热水.png"></image>
+           <p>热水</p>
+         </view>
+            <view>
+           <image src="img/wifi.png"></image>
+           <p>wifi</p>
+         </view>
+      </view>
+</view>
+<view class="mukuai">
+      <view class="title"><image src="img/电话.png"></image><span>酒店电话</span></view>
+      <view class="imfor">0571-60000000</view>
+</view>
+<view class="mukuai">
+      <view class="title"><image src="img/简介.png"></image><span>酒店简介</span></view>
+      <view class="imfor">酒店坐落在杭州市西湖区XXX。酒店集团精心打造的一家商务、会议、休闲度假型酒店。毗邻昌楼旅游度假区、长鹿旅游度假区，临近轻轨广州南站、顺德站、碧江站等。交通便利。酒店欧式装修，时尚高雅，拥有184间各类豪华套房。结合旅游度假，商务出差会务团体需求，为每一位并可提供热情周到的服务，让每一位宾客高手到宾至如归的感觉。</view>
+</view>

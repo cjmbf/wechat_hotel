@@ -1,0 +1,49 @@
+/* pages/xgma/xgma.wxss */
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Microsoft YaHei;
+  letter-spacing:5rpx; 
+}
+.old{
+  height: 150rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  
+}
+.new{
+  height: 150rpx;
+  background-color: #fff;
+  margin: 20rpx;
+}
+.ok{
+  height: 150rpx;
+  background-color: #fff;
+  margin: 20rpx;
+
+}
+text{
+  /* margin-top: 50rpx; */
+  margin-left: 20rpx;
+}
+input{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  height: 10vw;
+  width: 80vw;
+  background:#8b95ee;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 10vw;
+}
+button{
+  width: 80vw;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.phcolor{
+color:#fff;
+margin-left: 20px;
+}

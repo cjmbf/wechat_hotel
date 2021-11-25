@@ -1,0 +1,39 @@
+<!--pages/yuding/yuding.wxml-->
+
+
+<view>
+  <view class="weui-cells weui-cells_after-title" style='margin-top:100rpx;'>
+ <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" catchtap='showModalBtn' style='display:flex;width:94vw;'>
+  <view class="weui-cell__bd" >选择时间</view>
+  <view class="weui-cell__ft weui-cell__ft_in-access" >{{choosetime}}<span style='color:#999;'>></span></view>
+  
+ </view>
+<view style='border-bottom:1px solid #999;margin-top:10px;'></view>
+</view>
+<view class="day">
+<view>预定天数</view>
+<input bindinput="insertday"></input>
+</view>
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" hidden="{{showModal}}"></view>
+<view class="modal-dialog" hidden="{{showModal}}">
+ <view class='modalBox'>
+ <view class="row">
+    <view class="label">日期选择(附带时间)</view>
+      <date-picker bindonselectdate="handleSelecteDate" enableTime="{{true}}"/>
+      <button  bindtap='hideModal' style='height:30px;line-height:30px;font-size:16px;'>关闭</button>
+    </view>
+ </view>
+</view>
+
+
+  <view style='display:flex;width:94vw;margin-left:3vw;'>
+     <label style='margin-right:35vw;'>联系方式</label>
+     <view class='phone' style='color:#999 '>{{phone}}</view>
+  </view>
+  <view style='border-bottom:1px solid #999;margin-top:10px;'></view>
+  <view style='width:94vw;margin-left:3vw;margin-top:20px;'>
+     <label>留言（选填）</label>
+     <textarea  style='border:1px solid #999;margin-top:20px;'></textarea>
+  </view>
+  <button bindtap='submitInfo' style='margin-top:30px;width:90vw;border-radius:5px;background:#384195;color:#fff;'>立即预约</button>
+</view>

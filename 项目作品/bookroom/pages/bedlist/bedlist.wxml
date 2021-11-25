@@ -1,0 +1,29 @@
+<!--pages/bedlist/bedlist.wxml-->
+<view class='qbfy'>
+   <view class="quanbu">
+  <view style='font-size:18px;' ><span>--------</span>{{name}}<span>--------</span></view>
+  </view>
+  <view wx:for="{{list}}" wx:key="list" class="imfor">
+    <view class='info' bindtap='detailInfo' data-index="{{item.id}}">
+      <view>
+        <image src='http://localhost:8089/{{item.picture}}'></image>
+      </view>
+      <view class='infos'>
+        <view class='intro'>
+          <label>{{item.roomName}}</label>
+          <!-- <span> {{item.racPrice}}</span> -->
+        </view>
+        <view class='address'>
+        <view>{{item.area}}平方米   {{item.floor}}楼</view>
+        <view class='price'>
+          <label>{{item.memberPrice}}元起</label>
+          <view>
+        </view>
+        <!-- <view class='detail'></view> -->
+        
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

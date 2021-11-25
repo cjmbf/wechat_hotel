@@ -1,0 +1,33 @@
+<!--pages/list1/list1.wxml-->
+<view class='qbfy'>
+   <view class="quanbu">
+  <view style='font-size:18px;' ><span>--------</span>{{name}}<span>--------</span></view>
+  </view>
+  <view wx:for="{{list}}" wx:key="list" class="imfor" >
+    <view class='info' data-index="{{item.id}}">
+      <view>
+        <image src='http://localhost:8089/{{item.picture}}'></image>
+      </view>
+      <view class='infos'>
+        <view class='intro'>
+          <label>{{item.roomName}}</label>
+          <!-- <span> {{item.racPrice}}</span> -->
+        </view>
+        <view class='address'>
+        <view>{{item.area}}平方米   {{item.floor}}楼</view>
+          <view>门市价：{{item.racPrice}}</view>
+          <view>入住时间：{{item.checkIn}}</view>
+          <view>入住天数：{{item.day}}</view>
+        <view class='condition' bindtap="deleteyuding" data-id="{{item.id}}">
+          <label>取消预定</label>
+          <view>
+        </view>
+        <!-- <view class='detail'></view> -->
+        
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

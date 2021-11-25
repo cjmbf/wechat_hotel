@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view>
+  <swiper indicator-dots="true" style="height:40vw;margin-top:10px;" autoplay="true" interval="5000" duration="500">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style='border-radius:10px;width:90vw;height:40vw;margin-left:5vw;' />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view style='margin-top:10px;display:flex;justify-content:space-around'>
+    <view class='miaoshu'>
+      <image src="img/icon/duigoutianchong-.png"></image>
+      <view>舒适宜人</view>
+    </view>
+    <view class='miaoshu'>
+      <image src="img/icon/shandianfahuo.png"></image>
+      <view>干净整洁</view>
+    </view>
+    <view class='miaoshu'>
+      <image src="img/icon/zuanshi.png"></image>
+      <view>品质保证</view>
+    </view>
+  </view>
+
+  <view style='margin-top:10px;display:flex;justify-content:space-around'>
+    <view class='fenglei' bindtap='shuangchuang'>
+      <image src="img/icon/pinzhizhengzu.png"></image>
+      <view>双人房</view>
+    </view>
+    <view class='fenglei' bindtap="danchuang">
+      <image src="img/icon/hezu.png"></image>
+      <view>单人房</view>
+    </view>
+    <view class='fenglei' bindtap='jiudian'>
+      <image src="img/icon/rili.png"></image>
+      <view>酒店信息</view>
+    </view>
+    <view class='fenglei' bindtap='chazhao'>
+      <image src="img/icon/ditu.png"></image>
+      <view>查找</view>
+    </view>
+  </view>
+
+  <!-- <view style='width:90vw;margin-left:5vw;margin-top:10px;'>
+    <view style='font-size:18px;margin-bottom:10px;'>特价套房</view>
+    <view style='display:flex;justify-content:space-around;'>
+      <image src="../../img/fangyuan2.jpg" class='tehuiImg'></image>
+      <image src="../../img/fangyuan4.jpg" class='tehuiImg'></image>
+    </view>
+  </view> -->
+</view>
+
+<view class='qbfy'>
+   <view class="quanbu">
+  <view style='font-size:18px;' ><span>--------</span>全部房源<span>--------</span></view>
+  </view>
+  <view wx:for="{{list}}" wx:key="list" class="imfor">
+    <view class='info' bindtap='detailInfo' data-index="{{item.id}}">
+      <view>
+        <image src='http://localhost:8089/{{item.picture}}'></image>
+      </view>
+      <view class='infos'>
+        <view class='intro'>
+          <label>{{item.roomName}}</label>
+          <!-- <span> {{item.racPrice}}</span> -->
+        </view>
+        <view class='address'>
+        <view>{{item.area}}平方米   {{item.floor}}楼</view>
+        <view class='price'>
+          <label>{{item.memberPrice}}元起</label>
+          <view>
+        </view>
+        <!-- <view class='detail'></view> -->
+        
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

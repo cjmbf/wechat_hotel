@@ -1,0 +1,46 @@
+/* pages/jiudian/jiudian.wxss */
+page{
+  background: #eceaea4b;
+}
+.mukuai{
+  padding-top: 7px;
+  padding-bottom: 10px;
+  margin-top:10px;
+  background: #fff;
+}
+.imfor{
+  font-size: 13px;
+  padding-left: 15px;
+  color: #a39b9bde;
+  }
+.title{
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
+.title image{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.title span{
+ color: rgb(93, 179, 250);  
+ font-size: 13px;
+}
+.item image{
+  width: 25px;
+  height: 25px;
+}
+.item{
+  width:100vw;
+  display: inline-flex;
+  
+  }
+.item view{
+  width: 17vw;
+  margin-left: 5vw;
+  font-size: 12px;
+  color: #c9c5c5be;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

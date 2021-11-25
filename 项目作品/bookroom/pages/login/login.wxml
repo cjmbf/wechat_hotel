@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+<view class="login">
+  <image src="img/login1.jpg"></image>
+  <form>
+  <view class='section'>
+  <label>请输入账号：</label>
+   <input bindinput="accountInput" type='number' placeholder='用户名' />
+  </view>
+  <view class="section">
+  <label>请输入密码：</label>
+    <input bindinput="passwordInput" type='passward' placeholder='6到16位密码'/>
+  </view>
+  </form>
+   <view class='labelview'>
+      <label>
+      <navigator url="../reg/reg">
+      注册新用户
+      </navigator>
+      </label>
+      <label>重置</label>
+   </view>
+   <button disabled='{{disabled}}' type="{{btnstate}}" bindtap='login'>登录</button>
+</view>
+</view>

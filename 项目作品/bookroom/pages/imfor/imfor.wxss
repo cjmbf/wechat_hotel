@@ -1,0 +1,89 @@
+/* pages/imfor/imfor.wxss */
+.line{
+  color: #E0E3DA;
+   margin-top:3vw;
+   height: 6vw;
+   margin-right:10px;
+  }
+  .info view:nth-child(1){
+    
+     font-size: 12px;
+  }
+  .info view:nth-child(2){
+     color: red;
+     font-size: 14px;
+  }
+  
+  .detailItem{
+    width: 70vw;
+    margin-left:8vw;
+    column-count: 2;
+    font-size: 12px;
+  }
+  .detailItem label{
+    color: #999;
+  }
+  .hr{
+    margin-top:10px;
+  }
+  .fyjj{
+    display: flex;
+  }
+  .fyjj view,.footer view{
+    flex:1;
+    text-align: center;
+  }
+  .fyjj image,.footer image{
+    width: 6vw;
+    height:7vw;
+    display: block;
+    margin: 0 auto;
+    
+  }
+  .footer{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background:#384195;
+  }
+  .footer image{
+    padding-top:3px;
+    margin-bottom:-13px;
+  }
+  .title{
+margin-left: 5vw;
+    width: 90vw ;
+    font-size: 14px;
+    border-radius: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font: bold 20px/1 “helvetica neue”, helvetica, arial, sans-serif;
+    text-align: center;
+    background:#fcb51cbb;
+    box-shadow: 0 1px 3px #fcb51cbb;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+  }
+  .fyjj{
+    margin-top: 15px;
+    font-size: 12px
+  }
+  .neirong{
+   width: 90vw;
+   height: 50vw;
+   margin-left: 5vw;
+   color: #000;
+   border-radius: 5%;
+   
+    font:14px;
+    
+    text-align: center;
+    background:#d8d6d3bb;
+    box-shadow: 0 1px 3px #000;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+    
+  }

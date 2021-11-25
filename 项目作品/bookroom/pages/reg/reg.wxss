@@ -1,0 +1,53 @@
+/* pages/reg/reg.wxss */
+.img{
+  overflow: hidden;
+  
+  position: absolute;
+  top:40px;
+  left: 120px;
+}
+.titleImg{
+  width: 90vw;
+  height: 60vw;
+  margin-top: -100px;
+}
+
+.section{
+  display: flex;
+  margin: 0 auto;
+  width: 80vw;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.section label{
+   width:62vw;
+   color: #999;
+  font-family:microsoft yahei;
+  letter-spacing:2rpx;
+}
+input{
+height: 40px;
+line-height: 40px;
+margin-left: 5px;
+}
+.labelview{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  color: #999;
+  font-size: 15px;
+}
+button{
+  width: 80vw;
+  background-color:#384195;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+radio{
+    width: 38rpx;
+}
